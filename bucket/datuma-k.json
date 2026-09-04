@@ -1,0 +1,23 @@
+{
+    "version": "1.0.0",
+    "description": "Data contract plus templates that generate source",
+    "homepage": "https://github.com/marthvon/datuma_k",
+    "license": "AGPL-3.0-only",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/marthvon/datuma_k/releases/download/v1.0.0/datuma_k-windows-x86_64.exe#/datuma_k.exe",
+            "hash": "d21385fc2765e4696ee972bd655a6842a1bfc3e74f9ccb6324fdec5623d0abe3"
+        }
+    },
+    "bin": "datuma_k.exe",
+    "checkver": {
+        "github": "https://github.com/marthvon/datuma_k"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/marthvon/datuma_k/releases/download/v$version/datuma_k-windows-x86_64.exe#/datuma_k.exe"
+            }
+        }
+    }
+}
